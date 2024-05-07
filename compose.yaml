@@ -17,4 +17,6 @@ services:
       POSTGRES_DB: nn_chat
       TZ: "Asia/Tokyo"
     volumes:
-      - ../nn-chat-db:/var/lib/postgresql/data
+      - nn-chat-db:/var/lib/postgresql/data
+volumes:
+  nn-chat-db:
